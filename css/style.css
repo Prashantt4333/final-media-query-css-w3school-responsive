@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'myFont';
+    src: url("./fots/Roboto-Bold.ttf") format(truetype);
+}
+body{
+    margin: 0px;
+    font-family: 'myFont',sans-serif;
+}
+header{
+    width: 100%;
+    height:100px;
+    background: #9933CC;
+    color: #fff;
+}
+header > h1{
+    margin-top: 0px;
+    padding: 20px 8px;
+
+}
+
+main > aside:first-child{
+    float: left;
+    width: 25%;
+    height: 300px;
+   
+    
+}
+ul.ul_A{
+    list-style: none;
+    padding-left: 5px;
+}
+ul > li > a{
+    text-decoration: none;
+    background:#33B5E5 ;
+    color: #fff;
+    padding: 8px 10px;
+    display: block;
+    width: 90%;
+
+}
+ul > li{
+    margin-bottom: 15px;
+}
+
+main > section{
+    float: left;
+    width: 46%;
+    height: 300px;
+    padding: 0px;
+    
+}
+main > aside:last-child{
+    float: left;
+    width: 25%;
+    min-height: 300px;
+    background: #33B5E5;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+footer{
+    clear: both;
+    width: 99%;
+    color: #fff;
+    text-align: center;
+    background: #0099CC;      
+}
+
+
+/*
+    @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+        CSS-Code;
+    }
+
+*/
+
+/* Small Device 0px to 676px*/
+
+@media only screen and (min-width:0px) and (max-width:599px){
+    header{
+        width: 100%;
+    }
+    main > aside:first-child{
+        width: 100%;
+        height: 200px;
+    }
+    ul > li > a{
+        padding: 10px 30px;
+    }
+   
+    main > section{
+        width: 100%;
+        height: 150px;
+
+    }
+    main > aside:last-child{
+        width: 100%;
+        min-height: 150px;
+        text-align: center;
+        color: #fff;
+    }
+    footer > h5{
+        padding:10px;
+    }
+
+}
+
+/* Mediam Device 676px to 844px*/
+@media only screen and (min-width:599px) and (max-width:767px){
+    main > aside:first-child{
+        height: 220px;
+        width: 25%;
+        margin-right: 10px;
+    }
+    main > section{
+        width: 66%;
+        height: 220px;
+       
+    }
+    main > aside:last-child{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        color: #fff;
+    }
+    footer > h5{
+        padding:10px;
+    }
+   
+}
+/* Large Device 844px to px*/
+
+@media only screen and (min-width:767px) and (max-width:844px){
+    main > section{
+        padding:10px;
+    }
+    footer > h5{
+        padding:10px;
+    }
+
+}
+@media only screen and (min-width:945px){
+    main > section{
+        padding:10px;
+    }
+    footer > h5{
+        padding:10px;
+    }
+
+}
+
